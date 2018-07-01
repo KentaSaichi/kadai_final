@@ -5,7 +5,11 @@ class BlogsController < ApplicationController
   end
 
   def new
-    @blog = Blog.new
+    if params[:back]
+      @blog = Blog.new(blog_params)
+    else
+      @blog = Blog.new
+    end
   end
 
   def create
@@ -42,6 +46,7 @@ class BlogsController < ApplicationController
   end
   def confirm
     @blog = Blog.new(blog_params)
+    render :new if @blog.invalid?
   end
 
   private
