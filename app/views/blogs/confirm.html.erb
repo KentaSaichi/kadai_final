@@ -3,11 +3,24 @@
 <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
 
-  <p>本文:<%= @blog.content %></p>
-  <%= form.submit  "登録" %>
-<% end %>
+<table class='table'>
+  <tr>
+    <td>
+      <div id='index'>
+        <p><%= @blog.content %></p>
+      </div>
+    </td>
+    <td>
+      <button class="btn"> 登録</button>
+      <% end %>
+    </td>
+    <td>
+      <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
+      <%= form.hidden_field :content %>
+        <button class="btn"> 戻る</button>
+      <% end %>
+    </td>
+  </tr>
+  
+ 
 
-<%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
-  <%= form.hidden_field :content %>
-  <%= form.submit "戻る", name: 'back' %>
-<% end %>

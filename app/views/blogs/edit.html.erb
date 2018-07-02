@@ -1,4 +1,4 @@
-<h2>編集してください</h2>
+<h3>編集してください</h3>
 <%= form_with(model: @blog, local: true) do |form| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -11,12 +11,22 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="blog_title">
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit "投稿" %>
-<% end %>
-
-
-<%= link_to "戻る", blogs_path %>
+<table class='table'>
+  <tr>
+    <td>
+      <div class="blog_title">
+      <%= form.text_field :content %>
+      </div>
+    </td>
+    <td>
+      <button class="btn"> 登録</button>
+      <% end %>
+    </td>
+    <td>
+      <%= form_with(model: @blog, url: blogs_path, local: true, method: 'get') do |form| %>
+        <%= form.hidden_field :content %>
+        <button class="btn"> 戻る</button>
+      <% end %>
+    </td>
+  </tr>
+</table>

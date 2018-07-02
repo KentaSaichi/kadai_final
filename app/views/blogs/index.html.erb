@@ -1,17 +1,30 @@
-<h1>投稿一覧</h1>
-<table>
-  <tr>
-    <th>内容</th>
-  </tr>
-
+<h3>投稿一覧</h3>
+<table class='table'>
 <% @blogs.each do |blog| %>
   <tr>
-    <td><%= blog.content %></td>
-    <td><%= link_to '確認', blog_path(blog.id) %></td>
-    <td><%= link_to "編集", edit_blog_path(blog.id), data: { confirm: '本当に編集していいですか？' } %></td>
-    <td><%= link_to '削除', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
+    <td>
+      <div id="index">
+      <%= blog.content %>
+      </div>
+    </td>
+    <td>
+      <%= form_with(model: @blog, url: blog_path(blog.id), local: true, method: 'get') do |form| %>
+        <%= form.hidden_field :content %>
+        <button class="btn"> 確認</button>
+      <% end %>
+    </td>
+    <td>
+      <%= form_with(model: @blog, url: edit_blog_path(blog.id),　data: { confirm: '本当に編集していいですか？' }, local: true, method: 'get') do |form| %>
+        <%= form.hidden_field :content %>
+        <button class="btn"> 編集</button>
+      <% end %>
+    </td>
+    <td>
+      <%= form_with(model: @blog, url: blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' }, local: true, method: :delete ) do |form| %>
+        <%= form.hidden_field :content %>
+        <button class="btn"> 削除</button>
+      <% end %>
+    </td>
   </tr>
 <% end %>
 </table>
-
-<br>

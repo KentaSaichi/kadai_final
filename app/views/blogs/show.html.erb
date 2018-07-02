@@ -1,4 +1,15 @@
-<h2>確認してください</h2>
-<p>内容: <%= @blog.content %></p>
-
-<%= link_to "戻る", blogs_path %>
+<h3>確認してください</h3>
+<table class='table'>
+<tr>
+  <td>
+    <div id='index'>
+      <p><%= @blog.content %></p>
+    </div>
+  </td>
+  <td>
+    <%= form_with(model: @blog, url: blogs_path, local: true, method: 'get') do |form| %>
+      <%= form.hidden_field :content %>
+      <button class="btn"> 戻る</button>
+    <% end %>
+  </td>
+</table>

@@ -9,10 +9,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="blog_title">
-    <%= form.text_field :content %>
-  </div>
-  <%= form.submit "投稿" %>
-<% end %>
+<table class='table'>
+  <tr>
+    <td>
+      <div class="blog_title">
+        <%= form.text_field :content %>
+      </div>
+    </td>
+    <td>
+      <button class="btn"> 投稿</button>
+      <% end %>
+    </td>
+  </tr>
+</table>
 
