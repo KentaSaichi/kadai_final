@@ -1,0 +1,503 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 12, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 24, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 33, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 46, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 57, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 69, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 78, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 88, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 98, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 109, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 118, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 126, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 130, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 141, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 153, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 169, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 179, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 188, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 199, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 211, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 222, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 233, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 246, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 254, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 263, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 273, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 283, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 292, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 301, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 313, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 321, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 332, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 340, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/normalize.scss */
+[hidden] {
+  display: none;
+}
+/* line 1, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+body {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 10, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+li {
+  list-style: none;
+}
+
+/* line 19, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+h1 {
+  color: skyblue;
+  text-align: center;
+}
+
+/* line 24, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+#index {
+  text-align: center;
+  width: 400px;
+  font-size: 250%;
+}
+
+/* line 30, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+h3 {
+  text-align: center;
+  font-size: 300%;
+}
+
+/* line 35, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.header {
+  background-color: skyblue;
+  width: 980px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+/* line 42, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.top_menu li {
+  float: left;
+  width: auto;
+}
+
+/* line 47, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+/* line 54, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+
+/* line 58, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 64, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.footer {
+  width: 980px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: skyblue;
+  display: table;
+}
+
+/* line 73, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* line 81, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.logo_image {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* line 87, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  background-color: skyblue;
+  border: solid gray 1px;
+  border-radius: 5px;
+}
+
+/* line 97, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.blog_title {
+  text-align: center;
+  width: 400px;
+  font-size: 250%;
+}
+
+/* line 103, /home/ubuntu/workspace/kadai_final/app/assets/stylesheets/style.scss */
+.table {
+  margin: auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
